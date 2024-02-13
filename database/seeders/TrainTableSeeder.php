@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
+use App\Models\Trains;
+
 class TrainTableSeeder extends Seeder
 {
     /**
@@ -14,6 +16,6 @@ class TrainTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Trains::factory()->count(500)->create();
     }
 }
